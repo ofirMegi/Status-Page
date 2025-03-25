@@ -1,0 +1,11 @@
+FROM postgres:latest
+
+FROM postgres:latest
+
+ENV POSTGRES_USER=status-page
+ENV POSTGRES_PASSWORD=abcdefgh123456
+ENV POSTGRES_DB=status-page
+
+COPY init.sql /docker-entrypoint-initdb.d/
+
+EXPOSE 5432

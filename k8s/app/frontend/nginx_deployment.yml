@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: replace here
+        image: 992382545251.dkr.ecr.us-east-1.amazonaws.com/v2/shir/ofir:nginx
         ports:
         - containerPort: 80
       affinity:
